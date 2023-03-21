@@ -7,14 +7,14 @@ public class CurrencyConverter {
         double usdToGbp = 0.72;
         double usdToJpy = 109.73;
         double usdToKrw = 1177.54;
-        double usdToCop = 3800; // Agregar tasa de cambio USD a COP
+        double usdToCop = 3800;
 
         // Pedir al usuario la cantidad y la moneda de origen
         double amount = 0;
         String currencyFrom = "";
 
         do {
-            String amountString = JOptionPane.showInputDialog(null, "Introduce la cantidad:");
+            String amountString = JOptionPane.showInputDialog(null, "Ingrese la cantidad de dinero que desea convertir:");
             amount = Double.parseDouble(amountString);
 
             String[] currencies = {"USD", "EUR", "GBP", "JPY", "KRW", "COP"}; // Agregar COP
@@ -72,7 +72,7 @@ public class CurrencyConverter {
             }
 
             // Mostrar el resultado al usuario
-            JOptionPane.showMessageDialog(null, amount + " " + currencyFrom + " son $" + amountConverted + " " + currencyTo);
+            JOptionPane.showMessageDialog(null, " Usted tiene $" + String.format("%.2f", amountConverted) + " " + currencyTo);
 
         } while (JOptionPane.showConfirmDialog(null, "¿Desea continuar?", "Continuar", JOptionPane.YES_NO_OPTION) == JOptionPane.YES_OPTION);
 
