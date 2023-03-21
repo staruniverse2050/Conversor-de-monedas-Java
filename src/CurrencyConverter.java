@@ -7,7 +7,7 @@ public class CurrencyConverter {
         double usdToGbp = 0.72;
         double usdToJpy = 109.73;
         double usdToKrw = 1177.54;
-        double usdToCop = 3800;
+        double usdToCop = 3730;
 
         // Pedir al usuario la cantidad y la moneda de origen
         double amount = 0;
